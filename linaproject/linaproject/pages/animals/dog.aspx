@@ -1,5 +1,5 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="dog.aspx.cs" Inherits="linaproject.html.WebForm1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,12 +13,13 @@
         h1 {
             margin-top: 50px;
         }
+
         .center {
             margin: auto;
             width: 50%;
         }
-            .animal-info {
 
+        .animal-info {
             margin: auto;
             padding: 20px;
             border: 1px solid #ddd;
@@ -85,26 +86,26 @@
                 margin: 0 10px;
             }
     </style>
-    <title>Cat Animal</title>
+    <title>Dog Animal</title>
 </head>
 <body>
-    <h1>Information About the Cat Animal</h1>
+    <h1>Information About the Dog Animal</h1>
 
     <div class="animal-info center">
-        <a href="../index.html"><button class="back-button">&#8592; Back</button></a>
-        <img class="animal-image" src="https://images.pexels.com/photos/1643457/pexels-photo-1643457.jpeg" alt="Cat Image">
-        <div class="animal-title">Cat</div>
+        <a  class="back-button" href='<%= ResolveUrl("~/home.aspx") %>'>&#8592; Back</a>
+        <img class="animal-image" src="https://images.pexels.com/photos/2607544/pexels-photo-2607544.jpeg" alt="Dog Image">
+        <div class="animal-title">Dog</div>
         <div class="animal-description">
-            <p>The cat, also known as the domestic cat or house cat to distinguish it from other felids, is a small carnivorous mammal that is valued by humans for its companionship and ability to hunt vermin.</p>
-            <p>Cats have been known to have a close relationship with humans for thousands of years, and they are currently the most popular pet in the world. They are often valued by humans for companionship and their ability to hunt household pests such as rodents.</p>
+            <p>The dog is a domesticated carnivorous mammal that has been living with humans for thousands of years. It is valued for its loyalty, companionship, and ability to guard and work for humans.</p>
+            <p>Dogs come in different breeds, each with its own unique characteristics and sizes. They are known for their heightened senses and their ability to form strong emotional bonds with their human owners.</p>
         </div>
     </div>
 
     <div class="animal-gallery">
-        <img src="https://images.pexels.com/photos/1643457/pexels-photo-1643457.jpeg" alt="Additional Image 1">
-        <img src="https://images.pexels.com/photos/1643457/pexels-photo-1643457.jpeg" alt="Additional Image 1">
-        <img src="https://images.pexels.com/photos/1643457/pexels-photo-1643457.jpeg" alt="Additional Image 1">
+        <img src="https://images.pexels.com/photos/2607544/pexels-photo-2607544.jpeg" alt="Additional Image 1">
+        <img src="https://images.pexels.com/photos/2607544/pexels-photo-2607544.jpeg" alt="Additional Image 1">
+        <img src="https://images.pexels.com/photos/2607544/pexels-photo-2607544.jpeg" alt="Additional Image 1">
     </div>
 
 </body>
-</html>
+</asp:Content>
