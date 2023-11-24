@@ -188,6 +188,8 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="static\css\home.css" />
+    <Content Include="static\css\animal.css" />
     <Content Include="static\css\table.css" />
     <Content Include="static\css\navbar.css" />
     <Content Include="ViewSwitcher.ascx" />
