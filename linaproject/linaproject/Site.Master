@@ -71,13 +71,13 @@
 							<ul class="navbar-nav ml-auto py-4 py-md-0">
 								<li class='<%= (pageName == "Home" ? "active pl-4 pl-md-0 ml-0 ml-md-4 nav-item" : "nav-item pl-4 pl-md-0 ml-0 ml-md-4") %>'>
                                     
-									<a class="nav-link" data-toggle="dropdown" href="home.aspx" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
+									<a class="nav-link" href='<%= ResolveUrl("~/home.aspx") %>'>Home</a>
 								</li>
 								<li class='<%= (pageName == "Cat" ? "active pl-4 pl-md-0 ml-0 ml-md-4 nav-item" : "nav-item pl-4 pl-md-0 ml-0 ml-md-4") %>'>
-									<a class="nav-link" href="#">cat</a>
+									<a class="nav-link" href='<%= ResolveUrl("~/pages/animals/cat.aspx") %>'>Cat</a>
 								</li>
-								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-									<a class="nav-link" href="#">Agency</a>
+								<li class='<%= (pageName == "Table" ? "active pl-4 pl-md-0 ml-0 ml-md-4 nav-item" : "nav-item pl-4 pl-md-0 ml-0 ml-md-4") %>'>
+									<a class="nav-link" href='<%= ResolveUrl("~/pages/other/table.aspx") %>'>School Table</a>
 								</li>
 								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
 									<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
@@ -113,7 +113,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-               <center>\
+               <center>
                 <p> <asp:Label ID="lblTime" runat="server"></asp:Label>   -    &copy; <%: DateTime.Now.Year %> - Made with <span style="color: red; font-size: 20px">	&#9829; </span>by Watan Asaad</p>
                 </center>
             </footer>
