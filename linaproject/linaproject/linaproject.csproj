@@ -131,6 +131,7 @@
     <Content Include="pages\animals\dog.html" />
     <Content Include="pages\animals\cat.aspx" />
     <Content Include="index.html" />
+    <Content Include="pages\authentication\signup.aspx" />
     <Content Include="pages\other\table.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -237,6 +238,13 @@
     </Compile>
     <Compile Include="pages\animals\cat.aspx.designer.cs">
       <DependentUpon>cat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\authentication\signup.aspx.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\authentication\signup.aspx.designer.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\other\table.aspx.cs">
       <DependentUpon>table.aspx</DependentUpon>
