@@ -73,8 +73,8 @@
                                     
 									<a class="nav-link" href='<%= ResolveUrl("~/home.aspx") %>'>Home</a>
 								</li>
-								<li class='<%= (pageName == "Cat" ? "active pl-4 pl-md-0 ml-0 ml-md-4 nav-item" : "nav-item pl-4 pl-md-0 ml-0 ml-md-4") %>'>
-									<a class="nav-link" href='<%= ResolveUrl("~/pages/animals/cat.aspx") %>'>Cat</a>
+								<li class='<%= (pageName == "Sign Up" ? "active pl-4 pl-md-0 ml-0 ml-md-4 nav-item" : "nav-item pl-4 pl-md-0 ml-0 ml-md-4") %>'>
+									<a class="nav-link" href='<%= ResolveUrl("~/pages/authentication/signup.aspx") %>'>Sign Up</a>
 								</li>
 								<li class='<%= (pageName == "Table" ? "active pl-4 pl-md-0 ml-0 ml-md-4 nav-item" : "nav-item pl-4 pl-md-0 ml-0 ml-md-4") %>'>
 									<a class="nav-link" href='<%= ResolveUrl("~/pages/other/table.aspx") %>'>School Table</a>
